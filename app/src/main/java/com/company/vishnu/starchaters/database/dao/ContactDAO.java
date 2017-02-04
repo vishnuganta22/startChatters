@@ -4,9 +4,9 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 
-import com.yantranet.signware.chatapplication.Util;
-import com.yantranet.signware.chatapplication.database.DatabaseHelper;
-import com.yantranet.signware.chatapplication.database.Models.Contact;
+import com.company.vishnu.starchaters.Util;
+import com.company.vishnu.starchaters.database.DatabaseHelper;
+import com.company.vishnu.starchaters.database.Models.Contact;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -70,7 +70,9 @@ public class ContactDAO {
             Util.logException(e, LOG_LABEL);
         } finally {
             try {
-                cursor.close();
+                if (cursor != null) {
+                    cursor.close();
+                }
             } catch (Exception e) {
                 Util.logException(e, LOG_LABEL);
             }
@@ -192,6 +194,10 @@ public class ContactDAO {
             }
         } catch (Exception e) {
             Util.logException(e, LOG_LABEL);
+        }finally {
+            if(cursor != null){
+                cursor.close();
+            }
         }
 
         return contactList;

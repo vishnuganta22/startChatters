@@ -4,9 +4,9 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 
-import com.yantranet.signware.chatapplication.Util;
-import com.yantranet.signware.chatapplication.database.DatabaseHelper;
-import com.yantranet.signware.chatapplication.database.Models.Device;
+import com.company.vishnu.starchaters.Util;
+import com.company.vishnu.starchaters.database.DatabaseHelper;
+import com.company.vishnu.starchaters.database.Models.Device;
 
 /**
  * Created by vishnu on 9/9/15.
@@ -67,7 +67,9 @@ public class DeviceDAO {
             Util.logException(e, LOG_LABEL);
         } finally {
             try {
-                cursor.close();
+                if (cursor != null) {
+                    cursor.close();
+                }
             } catch (Exception e) {
                 Util.logException(e, LOG_LABEL);
             }

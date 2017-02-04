@@ -5,9 +5,10 @@ import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 
-import com.yantranet.signware.chatapplication.Util;
-import com.yantranet.signware.chatapplication.database.DatabaseHelper;
-import com.yantranet.signware.chatapplication.database.Models.Message;
+import com.company.vishnu.starchaters.Util;
+import com.company.vishnu.starchaters.database.DatabaseHelper;
+import com.company.vishnu.starchaters.database.Models.Message;
+
 
 /**
  * Created by vishnu on 19/9/15.
