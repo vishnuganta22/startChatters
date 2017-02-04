@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "525068214352",
+    "firebase_url": "https://chatapplication-506f8.firebaseio.com",
+    "project_id": "chatapplication-506f8",
+    "storage_bucket": "chatapplication-506f8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:525068214352:android:8be020f84359b24e",
+        "android_client_info": {
+          "package_name": "com.company.vishnu.starchaters"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "525068214352-sqaomiq1t2brr59lmrb5mtb9gf8mq09g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCD32I69KSczbaSdDI8N6qhAqLjLf2cMVs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
